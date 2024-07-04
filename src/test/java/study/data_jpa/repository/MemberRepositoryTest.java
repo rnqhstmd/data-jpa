@@ -101,4 +101,9 @@ public class MemberRepositoryTest {
         em.flush();
         System.out.println("findMember = " + findMember.getUsername());
     }
+
+    @Test
+    public void callCustom() {
+        List<Member> result = memberRepository.findMemberCustom();
+    }
 }
